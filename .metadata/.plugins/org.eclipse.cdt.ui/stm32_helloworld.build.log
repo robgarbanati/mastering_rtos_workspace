@@ -1,0 +1,17 @@
+19:59:38 **** Incremental Build of configuration Debug for project stm32_helloworld ****
+make -j8 all 
+Building target: stm32_helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/rob/workspace/rtos_workspace/stm32_helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "stm32_helloworld.elf" @"objects.list"   -lm
+Finished building target: stm32_helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "stm32_helloworld.elf" "stm32_helloworld.bin"
+arm-none-eabi-size "stm32_helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13864	   1120	  79084	  94068	  16f74	stm32_helloworld.elf
+ 
+
+19:59:39 Build Finished (took 1s.515ms)
+

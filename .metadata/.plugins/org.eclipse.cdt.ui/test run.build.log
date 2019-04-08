@@ -1,0 +1,25 @@
+17:52:20 **** Build of configuration Debug for project test run ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\test run\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+C:\Users\rob\workspace\rtos_workspace\test run\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+Finished building: ../startup/startup_stm32.s
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: test run.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/rob/workspace/rtos_workspace/test run/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test run.elf" @"objects.list"   -lm
+startup/startup_stm32.o: In function `LoopFillZerobss':
+C:\Users\rob\workspace\rtos_workspace\test run\Debug/../startup/startup_stm32.s:82: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [test run.elf] Error 1
+makefile:33: recipe for target 'test run.elf' failed
+
+17:52:21 Build Finished (took 1s.94ms)
+

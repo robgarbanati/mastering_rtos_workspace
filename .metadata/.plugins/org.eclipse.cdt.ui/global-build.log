@@ -1,0 +1,109 @@
+20:08:32 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\helloworld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"C:/Users/rob/workspace/rtos_workspace/helloworld/StdPeriph_Driver/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/config" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/include" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/device" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:42:13: warning: 'UART_ACCESS_KEY' defined but not used [-Wunused-variable]
+ static bool UART_ACCESS_KEY;
+             ^~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=rdimon.specs -lc -lrdimon -T"C:/Users/rob/workspace/rtos_workspace/helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "helloworld.elf" @"objects.list"   -lm
+Finished building target: helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "helloworld.elf" "helloworld.bin"
+arm-none-eabi-size "helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13764	   1120	  78572	  93456	  16d10	helloworld.elf
+ 
+20:08:38 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:13:57 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\helloworld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"C:/Users/rob/workspace/rtos_workspace/helloworld/StdPeriph_Driver/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/config" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/include" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/device" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=rdimon.specs -lc -lrdimon -T"C:/Users/rob/workspace/rtos_workspace/helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "helloworld.elf" @"objects.list"   -lm
+Finished building target: helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "helloworld.elf" "helloworld.bin"
+arm-none-eabi-size "helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20700	   2172	  78792	 101664	  18d20	helloworld.elf
+ 
+20:14:09 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:14:48 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\helloworld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"C:/Users/rob/workspace/rtos_workspace/helloworld/StdPeriph_Driver/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/config" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/include" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/device" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=rdimon.specs -lc -lrdimon -T"C:/Users/rob/workspace/rtos_workspace/helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "helloworld.elf" @"objects.list"   -lm
+Finished building target: helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "helloworld.elf" "helloworld.bin"
+arm-none-eabi-size "helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20668	   2172	  78792	 101632	  18d00	helloworld.elf
+ 
+20:15:18 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\helloworld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"C:/Users/rob/workspace/rtos_workspace/helloworld/StdPeriph_Driver/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/config" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/include" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/device" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=rdimon.specs -lc -lrdimon -T"C:/Users/rob/workspace/rtos_workspace/helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "helloworld.elf" @"objects.list"   -lm
+Finished building target: helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "helloworld.elf" "helloworld.bin"
+arm-none-eabi-size "helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13872	   1120	  78572	  93564	  16d7c	helloworld.elf
+ 
+20:16:58 **** Incremental Build of configuration Debug for project helloworld ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\rob\workspace\rtos_workspace\helloworld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_STDPERIPH_DRIVER -I"C:/Users/rob/workspace/rtos_workspace/helloworld/StdPeriph_Driver/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/config" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/Third-Party/FreeRTOS/org/Source/include" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/inc" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/device" -I"C:/Users/rob/workspace/rtos_workspace/helloworld/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: helloworld.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=rdimon.specs -lc -lrdimon -T"C:/Users/rob/workspace/rtos_workspace/helloworld/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "helloworld.elf" @"objects.list"   -lm
+Finished building target: helloworld.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "helloworld.elf" "helloworld.bin"
+arm-none-eabi-size "helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+  13880	   1120	  78572	  93572	  16d84	helloworld.elf
+ 
